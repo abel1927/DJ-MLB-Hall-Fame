@@ -1,1 +1,5 @@
-# DJ-MLB-Hall-Fame
+# DJ- MLB Hall of Fame
+
+El proyecto consiste en un estudio dentro de la rama del Periodismo de Datos(Data Journalism) del Hall de la Fama de la MLB(Major League Baseball). El mismo será una conjunción entre las materias de Periodismo de Datos y Aprendizaje de Máquinas ya que se utilizarán dentro de este técnicas de AM para el análisis de los datos. Se plantea encontrar las características que han determinado las inclusiones dentro del Hall en las diferentes etapas, así como un análisis de las inclusiones o ausencias más llamativas en la historia. A su vez, como parte del proyecto, se plantea crear un modelo que permita predecir la posibilidad de que un jugador determinado sea incluido dentro del Hall a futuro. Será necesario crear un modelo que analice a los pitchers y otro a los bateadores debido a las particularidades estadísticas de cada conjunto.
+
+La fuente de datos que se utilizará hasta el momento consiste en el sitio _Baseball-Reference(https://www.baseball-reference.com/)_ que ofrece datos estadísticos históricos de los jugadores de la MLB, así como incluye una sección para los incluidos dentro del Hall de la Fama.
