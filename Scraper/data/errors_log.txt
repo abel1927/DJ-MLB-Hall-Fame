@@ -1,0 +1,68 @@
+N - Lefty Bell : https://www.baseball-reference.com//players/b/bellle02.shtml
+S - Roger Bresnahan 1897,1915 : https://www.baseball-reference.com//players/b/bresnro01.shtml
+S - Jesse Burkett 1890,1905 : https://www.baseball-reference.com//players/b/burkeje01.shtml
+S - Max Carey 1910,1929 : https://www.baseball-reference.com//players/c/careyma01.shtml
+S - Dave Concepcion 1970,1988 : https://www.baseball-reference.com//players/c/conceda01.shtml
+S - Jocko Conlan 1934,1935 : https://www.baseball-reference.com//players/c/conlajo01.shtml
+S - Rheal Cormier 1991,2007 : https://www.baseball-reference.com//players/c/cormirh01.shtml
+S - Al Cuccinello 1935,1935 : https://www.baseball-reference.com//players/c/cuccial01.shtml
+S - Fats Dantonio 1944,1945 : https://www.baseball-reference.com//players/d/dantofa01.shtml
+S - Jake Daubert 1910,1924 : https://www.baseball-reference.com//players/d/daubeja01.shtml
+S - Jerry Denny 1881,1894 : https://www.baseball-reference.com//players/d/dennyje01.shtml
+N - Rufino Díaz : https://www.baseball-reference.com//players/d/diazru01.shtml
+S - Dan Driessen 1973,1987 : https://www.baseball-reference.com//players/d/driesda01.shtml
+S - Reuben Ewing 1921,1921 : https://www.baseball-reference.com//players/e/ewingre01.shtml
+S - John Finner 1920,1925 : https://www.baseball-reference.com//players/f/finnejo01.shtml
+S - Jim Fregosi 1961,1978 : https://www.baseball-reference.com//players/f/fregoji01.shtml
+S - Joe Gantenbein 1939,1940 : https://www.baseball-reference.com//players/g/gantejo01.shtml
+S - Ernest Gatewood 1924,1927: https://www.baseball-reference.com//players/g/gatewer01.shtml
+N - Gibson : https://www.baseball-reference.com//players/g/gibso03.shtml
+S - George Gibson 1905,1918 : https://www.baseball-reference.com//players/g/gibsoge01.shtml
+S - Rich Gossage 1972,1994 : https://www.baseball-reference.com//players/g/gossari01.shtml
+N - Chappie Gray : https://www.baseball-reference.com//players/g/graych03.shtml
+N - Willie Green : https://www.baseball-reference.com//players/g/greenwi02.shtml
+S - Bobby Grich 1970,1986 : https://www.baseball-reference.com//players/g/grichbo01.shtml
+N - Bad News Hall : https://www.baseball-reference.com//players/h/hallba01.shtml
+S - Lewis Hampton 1921,1927 : https://www.baseball-reference.com//players/h/hamptle01.shtml
+N - Mack Heller : https://www.baseball-reference.com//players/h/hellema01.shtml
+S - John Hofford 1885,1886 : https://www.baseball-reference.com//players/h/hoffojo01.shtml
+S - Leon Hooten 1974,1974 : https://www.baseball-reference.com//players/h/hootele01.shtml
+S - Charley House 1937,1945 : https://www.baseball-reference.com//players/h/housech03.shtml
+S - Willie Hutchinson 1939,1946 : https://www.baseball-reference.com//players/h/hutchwi01.shtml
+S - Baby Doll Jacobson 1915,1927 : https://www.baseball-reference.com//players/j/jacobba01.shtml
+S - Fergie Jenkins 1965,1983 : https://www.baseball-reference.com//players/j/jenkife01.shtml
+S - Judy Johnson 1923,1936 : https://www.baseball-reference.com//players/j/johnsju99.shtml
+S - Dolly King 1944,1948 : https://www.baseball-reference.com//players/k/kingdo01.shtml
+S - Lee Magee 1911,1919 : https://www.baseball-reference.com//players/m/mageele01.shtml
+N - John Magner : https://www.baseball-reference.com//players/m/magnejo01.shtml
+S - Hank Majeski 1939,1955 : https://www.baseball-reference.com//players/m/majesha01.shtml
+S - Edgar Martinez 1987,2004 : https://www.baseball-reference.com//players/m/martied01.shtml
+S - Denny McLain 1963,1972 : https://www.baseball-reference.com//players/m/mclaide01.shtml
+N - Albert McNeal : https://www.baseball-reference.com//players/m/mcneaal01.shtml
+N - Jim Oliver : https://www.baseball-reference.com//players/o/oliveji01.shtml
+N - Bill Ortiz : https://www.baseball-reference.com//players/o/ortizbi01.shtml
+N - Rusty Payne : https://www.baseball-reference.com//players/p/payneru01.shtml
+S - Ed Porray 1914,1914 : https://www.baseball-reference.com//players/p/porraed01.shtml
+S - Allie Reynolds 1942,1954 : https://www.baseball-reference.com//players/r/reynoal01.shtml
+S - Cal Ripken Jr. 1981,2001 : https://www.baseball-reference.com//players/r/ripkeca01.shtml
+S - Brooks Robinson 1955,1977 : https://www.baseball-reference.com//players/r/robinbr01.shtml
+S - Steve Rogers 1973,1985 : https://www.baseball-reference.com//players/r/rogerst01.shtml
+S - Rube Schauer 1913,1917: https://www.baseball-reference.com//players/s/schauru01.shtml
+S - Herb Score 1955,1962 : https://www.baseball-reference.com//players/s/scorehe01.shtml
+N - Bobby Scott : https://www.baseball-reference.com//players/s/scottbo02.shtml
+N - Louis Smallwood : https://www.baseball-reference.com//players/s/smalllo01.shtml
+N - Mance Smith : https://www.baseball-reference.com//players/s/smithma06.shtml
+N - John Spearman : https://www.baseball-reference.com//players/s/spearjo01.shtml
+S - Riggs Stephenson 1921,1934 : https://www.baseball-reference.com//players/s/stephri01.shtml
+S - Dick Stigman 1960,1966 : https://www.baseball-reference.com//players/s/stigmdi01.shtml
+S - Tony Suck 1883,1884 : https://www.baseball-reference.com//players/s/suckto01.shtml
+S - Dave Telgheder 1993,1998: https://www.baseball-reference.com//players/t/telghda01.shtml
+S - Herb Thomas 1928,1929 : https://www.baseball-reference.com//players/t/thomahe02.shtml
+S - Eddie Tucker 1992,1995 : https://www.baseball-reference.com//players/t/tuckeed01.shtml
+S - Casey Walker 1937,1937 : https://www.baseball-reference.com//players/w/walkeca01.shtml
+S - Sam Warmack 1929,1932 : https://www.baseball-reference.com//players/w/warmasa01.shtml
+N - Joe Wheeler : https://www.baseball-reference.com//players/w/wheeljo01.shtml
+S - Hoyt Wilhelm 1952,1972 : https://www.baseball-reference.com//players/w/wilheho01.shtml
+S - String Bean Williams 1923,1925 : https://www.baseball-reference.com//players/w/willist03.shtml
+S - Hughie Wise 1930,1930 : https://www.baseball-reference.com//players/w/wisehu01.shtml
+N - Herb Worth : https://www.baseball-reference.com//players/w/worthhe01.shtml
