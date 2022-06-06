@@ -1,10 +1,11 @@
 import bs4
 import requests
 import re
-import csv
+import json
 from time import sleep
 from random import random
-from os.path import getsize, exists
+from os import mkdir
+from os.path import exists
 from player_scraper import player_scraper
 
 _bref_url = "https://www.baseball-reference.com/"
@@ -13,92 +14,73 @@ _initials = "abcdefghijklmnopqrstuvwxyz"
 
 patron = re.compile('(?P<name>[\s\.\w]+)(?P<hall>\+)?\s*\((?P<first_year>\d{4})-(?P<last_year>\d{4})\)')
 
-_bio_headers = ['Name',"First year","Last year","Full Name","Country","Positions","Bat hand","Throw hand",
-            "HoF","HoF type","HoF year","HoF comittee"]
+#general_data = './Data/players_mlb.json'
 
-batters_headers = ["Years","G","PA","AB","R","H","2B","3B","HR","RBI","SB","CS","BB","SO","BA","OBP","SLG",
-    "OPS","OPS+","TB","GDP","HBP","SH","SF","IBB","Rbat","Rbaser","Rdp","Rfield","Rpos","RAA","WAA","Rrep",
-    "RAR","WAR","waaWL%","162WL%","oWAR","dWAR","oRAR"]
+all_data = './Data/players/'
 
-pitchers_headers = ["Years","W","L","W-L%","ERA","G","GS","GF","CG","SHO","SV","IP","H","R","ER","HR",
-    "BB","IBB","SO","HBP","BK","WP","BF","ERA+","FIP","WHIP","H9","HR9","BB9","SO9","SO/W","RA9","RA9opp",
-    "RA9def","RA9role","PPFp","RA9avg","RAA","WAA","gmLI","WAAadj","WAR","RAR","waaWL%","162WL%"]
-
-
-pitchers_file = 'data/pitchers.csv'
-batters_file = 'data/batters.csv'
-pit_bat_file = 'data/pit_bat.csv'
-errors_Log = 'data/errors_log.txt'
-finish_log = 'data/finish_log.txt'
+errors_Log = './Data/errors_log.txt'
+finish_log = './Data/finish_log.txt'
 
 e_l = open(errors_Log,'a',newline="")
 
 f_l = open(finish_log,'r', newline="")
 finish_players = str(f_l.read()).split('\n')
+
 f_l.close()
 
 f_l = open(finish_log,'a', newline="")
 
-p_f =  open(pitchers_file, 'a', newline='') if exists(pitchers_file) else open(pitchers_file, 'w', newline='')
-w_p_f = csv.DictWriter(p_f,_bio_headers + pitchers_headers)
-if getsize(pitchers_file) == 0:
-    w_p_f.writeheader()
-
-
-b_f = open(batters_file, 'a', newline='') if exists(batters_file) else open(batters_file, 'w', newline='')
-w_b_f = csv.DictWriter(b_f,_bio_headers +batters_headers)
-if getsize(batters_file) == 0:
-    w_b_f.writeheader()
-
-
-p_b_f = open(pit_bat_file, 'a', newline='') if exists(pit_bat_file) else open(pit_bat_file, 'w', newline='')
-w_p_b_f = csv.DictWriter(p_b_f,_bio_headers + pitchers_headers + [x+"_bat" for x in batters_headers])
-if getsize(pit_bat_file) == 0:
-    w_p_b_f.writeheader()
-
-_players_count = 0
+_players_count = len(finish_players)
 
 for ini in _initials:
+    ini_path = all_data + ini
+    if not exists(ini_path):
+        mkdir(ini_path)
+
+    ini_htmls_path = ini_path+'/html'
+    ini_jsons_path = ini_path+'/json'
+
+    if not exists(ini_htmls_path):
+        mkdir(ini_htmls_path)
+    if not exists(ini_jsons_path):
+        mkdir(ini_jsons_path)
+
     players_letter_url = _source + ini
     res = requests.get(players_letter_url)
     soup = bs4.BeautifulSoup(res.text, 'html.parser')
     players = soup.find('div', attrs = {'id':'div_players_'})
     for player in players.findAll('p'):
-        _players_count +=1
+        initial_attr = {}
         m =  patron.search(player.text)
         name = re.sub('\s([\s])+','',m.group('name'))
         if name in finish_players:
             continue
-        vals = [name,int(m.group('first_year')),int(m.group('last_year'))]
+        id = name+"_"+str(_players_count)
+        initial_attr['Id'] = id.replace(" ", "_")
+        initial_attr['Name'] = name
+        initial_attr['Active'] = player.find('b')!= None
+        initial_attr['First year'], initial_attr['Last year'] = int(m.group('first_year')),int(m.group('last_year'))
         player_url = _bref_url + player.a['href']
-        _player_type, stats = 0,[]
+        initial_attr['Url'] = player_url
         try:
-            _player_type, stats = player_scraper(player_url)
+            player_dict = player_scraper(player_url, initial_attr, save_html=False, html_save_path=ini_htmls_path+"/"+initial_attr['Id']+".txt")
+            with open(ini_jsons_path+"/"+initial_attr['Id']+'.json', 'w') as file:
+                json.dump(player_dict, file, indent=4)
         except Exception as e:
             e_l.write(name + " : " + str(player_url)+"\n")
             print(" Error with player: " + name + " : " + str(player_url) + "..." + str(e) + "\n")
             continue
         
-        vals.extend(stats)
-        headers = []
-        if _player_type == 1:
-            w_p_f.writerow(dict(zip(_bio_headers +pitchers_headers,vals)))
-        elif _player_type == 2:
-            w_b_f.writerow(dict(zip(_bio_headers +batters_headers,vals)))
-        else:
-            w_p_b_f.writerow(dict(zip(_bio_headers + pitchers_headers + [x+"_bat" for x in batters_headers], vals)))
-        if _players_count%250 == 0:
+        if _players_count%15 == 0:
             print(f"in progress---{_players_count}")
         f_l.write(name+"\n")
+        _players_count +=1
        
         sleep(1.0+round(random()/1.3,4))
 
     print(f"{ini}--finish\n")
     sleep(1.0+round(random()/1.3,4))
 
-p_f.close()
-b_f.close()
-p_b_f.close()
 e_l.close()
 f_l.close()
      
