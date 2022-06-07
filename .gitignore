@@ -130,6 +130,4 @@ dmypy.json
 
 #Data
 Data/mlb_players.json
-Data/Corpus_csv/batters_all_career.csv
-Data/Corpus_csv/pitchers_all_career.csv
-Data/Corpus_csv/pit_bat_all_career.csv
+Data/Corpus_csv/
