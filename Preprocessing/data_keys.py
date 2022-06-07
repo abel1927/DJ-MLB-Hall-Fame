@@ -92,7 +92,11 @@ countries = {'af': "Afganistán",
      'vi': "Islas Vírgenes Americanas",
      'vn': "Vietnam",
      'za': "Sudáfrica"}
-         
+
+leagues_mayors =  {'AL','NL','AA','UA', 'PL','FL','NA'}
+
+negro_leagues = {'ANL','ECL','EWL','NAL','NNL','NN2', 'NSL'}
+
 def get_position_by_reverse_key(pos_name_or_key:str)->str:
     return positions[pos_name_or_key]
 

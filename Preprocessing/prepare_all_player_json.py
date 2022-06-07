@@ -2,6 +2,7 @@ from os import walk
 import json
 import re
 from fielder_stats_calc import *
+from data_keys import negro_leagues, leagues_mayors
 
 numerical_stat_patron = re.compile('^-?(0|[1-9]\d*)?(\.\d+)?(?<=\d)$')
 
@@ -45,6 +46,8 @@ with open('./Data/mlb_players.json', 'w') as file:
                     player_teams = []
                     retirement_age = -1
                     player_leagues = []
+                    play_in_mayors = 0   #0 no, 1 si
+                    play_in_negro_league = 0  #0 no, 1 si
                     total_years = -1
 
                     if len(player_dict["batter_stats"])>0: 
@@ -252,6 +255,13 @@ with open('./Data/mlb_players.json', 'w') as file:
                         player_teams.remove("TOT")
                     player_dict["career_teams"] = player_teams
                     player_dict['career_leagues'] = player_leagues
+                    for lg in player_leagues:
+                        if lg in negro_leagues:
+                            play_in_negro_league = 1
+                        elif lg in leagues_mayors:
+                            play_in_mayors = 1
+                    player_dict['play_in_mayors'] = play_in_mayors
+                    player_dict['play_in_negro_league'] = play_in_negro_league
                     ab_positions = []
                     for p in player_dict["Positions"]:
                         ab_positions.append(pos[p])
