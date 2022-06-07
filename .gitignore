@@ -131,3 +131,4 @@ dmypy.json
 #Data
 Data/mlb_players.json
 Data/Corpus_csv/
+Data/players/
