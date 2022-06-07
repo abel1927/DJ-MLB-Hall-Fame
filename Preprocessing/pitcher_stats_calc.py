@@ -29,9 +29,12 @@ def runs_better_than_average(ip,ra9_average,ra9):
     return round(ip*(ra9_average-ra9)/9,3) if ip != 0 else 0
 
 #????????????
-def wins_above_average(waaWL_percent,games):
-    pass
+#def wins_above_average(waaWL_percent,games):
+#    pass
 
 #????????????
-def war(args):
-    pass
+#def war(args):
+#    pass
+
+def era_plus(era,era_league_average):
+    return round(100*era_league_average/era,3) if era != 0 else 0
