@@ -75,7 +75,7 @@ for ini in _initials:
             print(f"in progress---{_players_count}")
         f_l.write(name+"\n")
         _players_count +=1
-       
+    
         sleep(1.0+round(random()/1.3,4))
 
     print(f"{ini}--finish\n")
@@ -83,4 +83,3 @@ for ini in _initials:
 
 e_l.close()
 f_l.close()
-     

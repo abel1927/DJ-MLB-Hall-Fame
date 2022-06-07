@@ -34,3 +34,4 @@ def inning_sum(new_inn:float, curr_inn:float)->float:
     inn_dec = 10*(new_inn_dec+curr_inn_dec)
     inn = inn_int + (inn_dec//3) + (inn_dec%3/10)
     return inn
+
