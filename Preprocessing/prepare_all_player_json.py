@@ -21,7 +21,6 @@ pos = {'Pitcher':"P",
     'Designated Hitter':"DH",
     'Pinch Runner':"PR"}
 
-
 selected_bat_value_stats = {"Rbat","Rbaser","Rdp","Rfield","Rpos","RAA","WAA","Rrep","RAR","WAR","oWAR","dWAR","oRAR"}
 
 selected_pit_value_stats = {"RAA","WAA","WAR","RAR"}
@@ -49,6 +48,9 @@ with open('./Data/mlb_players.json', 'w') as file:
                     play_in_mayors = 0   #0 no, 1 si
                     play_in_negro_league = 0  #0 no, 1 si
                     total_years = -1
+                    summary_position = ""
+                    games_as_pitcher = 0
+                    games_as_batter = 0
 
                     if len(player_dict["batter_stats"])>0: 
                         b_stats = {"Age":{},"Lg":{},"G":{},"PA":{},"AB":{},"R":{},"H":{},"2B":{},"3B":{},"HR":{},
@@ -187,7 +189,8 @@ with open('./Data/mlb_players.json', 'w') as file:
                                     "PB":{},"WP":{},"SB":{},"CS":{}}
                         selected_stats = f_stats.keys()                     
                         years_field_standard = player_dict["field_stats"]['by_years']
-                        #summary_field_standard = player_dict["field_stats"]['summary']
+                        summary_position = player_dict["field_stats"]['summary']['Pos']
+
                         data_years = []
                         for year_stats in years_field_standard:
                             _y = year_stats["Year"]
@@ -262,6 +265,7 @@ with open('./Data/mlb_players.json', 'w') as file:
                             play_in_mayors = 1
                     player_dict['play_in_mayors'] = play_in_mayors
                     player_dict['play_in_negro_league'] = play_in_negro_league
+                    player_dict['two_way_player'] = 0
                     ab_positions = []
                     for p in player_dict["Positions"]:
                         ab_positions.append(pos[p])
@@ -270,13 +274,39 @@ with open('./Data/mlb_players.json', 'w') as file:
                     if player_dict['Player type'] == 1:
                         first_postition = "P"
                     elif player_dict['Player type'] == 2:
-                        if len(ab_positions)>0:
+                        if len(ab_positions)==1:
                             first_postition = ab_positions[0]
-                            if len(ab_positions) > 1:
-                                second_position = ab_positions[1]
+                        elif len(ab_positions) > 1:
+                            first_postition = summary_position
+                            for p in ab_positions:
+                                if p != first_postition:
+                                    second_position = p
+                                    break
                     else:
-                        first_postition = ab_positions[0]
-                        second_position = ab_positions[1]
+                        games_as_pitcher = p_stats["G"]["summary"]
+                        games_as_batter = b_stats["G"]["summary"]
+                        if games_as_batter > games_as_pitcher:
+                            player_dict['Player type'] = 2
+                            if summary_position != "P":
+                                first_postition = summary_position
+                                second_position = "P"
+                            else:
+                                second_postition = summary_position
+                                for p in ab_positions:
+                                    if p != "P":
+                                        first_postition = p
+                        else:
+                            player_dict['Player type'] = 1
+                            if summary_position == "P":
+                                first_postition = summary_position
+                                for p in ab_positions:
+                                    if p != "P":
+                                        second_postition = p
+                            else:
+                                first_postition == "P"
+                                second_postition = summary_position
+                        player_dict['two_way_player'] = 1 if games_as_batter > 159 and games_as_pitcher>159 else 0
+
                     player_dict["Positions"] = ab_positions
                     player_dict['first_position'] = first_postition
                     player_dict['second_position'] = second_position
