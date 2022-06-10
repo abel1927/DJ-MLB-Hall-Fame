@@ -30,8 +30,7 @@ positions = {'Pitcher':"P",
 
 players_type= {
     1:"Pitcher",
-    2:"Batter",
-    3:"Pitcher_Batter"
+    2:"Batter"
 }
 
 countries = {'af': "Afganistán",
