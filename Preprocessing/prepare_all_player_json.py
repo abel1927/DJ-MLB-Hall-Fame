@@ -277,11 +277,15 @@ with open('./Data/mlb_players.json', 'w') as file:
                         if len(ab_positions)==1:
                             first_postition = ab_positions[0]
                         elif len(ab_positions) > 1:
-                            first_postition = summary_position
-                            for p in ab_positions:
-                                if p != first_postition:
-                                    second_position = p
-                                    break
+                            if summary_position in ['','-']:
+                                first_postition  = ab_positions[0]
+                                second_position = ab_positions[1]
+                            else:
+                                first_postition = summary_position
+                                for p in ab_positions:
+                                    if p != first_postition:
+                                        second_position = p
+                                        break
                     else:
                         games_as_pitcher = p_stats["G"]["summary"]
                         games_as_batter = b_stats["G"]["summary"]

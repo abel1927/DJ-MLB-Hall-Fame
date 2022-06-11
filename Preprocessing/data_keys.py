@@ -96,6 +96,11 @@ leagues_mayors =  {'AL','NL','AA','UA', 'PL','FL','NA'}
 
 negro_leagues = {'ANL','ECL','EWL','NAL','NNL','NN2', 'NSL'}
 
+headers_bio = ['Id', 'Name', 'Active','First year','Last year','Url','Country','Bat hand','Throw hand','Full Name','HoF','HoF type','HoF year','HoF comittee','Player type','retirement_age','total_seasons','career_teams','career_leagues','first_position','second_position','play_in_mayors','play_in_negro_league','two_way_player']
+headers_bat = ['2B_bt','3B_bt','AB_bt','BA_bt','BB_bt','CS_bt','G_bt','HR_bt','H_bt','IBB_bt','OBP_bt','OPS+_bt','OPS_bt','PA_bt','RAA_bt','RAR_bt','RBI_bt','R_bt','Rbaser_bt','Rbat_bt','Rdp_bt','Rfield_bt','Rpos_bt','Rrep_bt','SB_bt','SF_bt','SH_bt','SLG_bt','SO_bt','TB_bt','WAA_bt','WAR_bt','dWAR_bt','oRAR_bt','oWAR_bt','A_fd','CG_fd','CS%_fd','CS_fd','Ch_fd','DP_fd','E_fd','Fld%_fd','GS_fd','G_fd','Inn_fd','PB_fd','PO_fd','RF/9_fd','RF/G_fd','SB_fd','WP_fd']
+headers_pit = ['W_pt','L_pt','W-L%_pt','ERA_pt','G_pt','GS_pt','GF_pt','CG_pt','SHO_pt','SV_pt','IP_pt','H_pt','R_pt','ER_pt','HR_pt','BB_pt','IBB_pt','SO_pt','HBP_pt','BK_pt','WP_pt','BF_pt','ERA+_pt','FIP_pt','WHIP_pt','H9_pt','HR9_pt','BB9_pt','SO9_pt','SO/W_pt','RAA_pt','WAA_pt','WAR_pt','RAR_pt']
+
+
 def get_position_by_reverse_key(pos_name_or_key:str)->str:
     return positions[pos_name_or_key]
 
