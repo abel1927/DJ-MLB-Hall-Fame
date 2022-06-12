@@ -1,7 +1,7 @@
 from os import walk
 import json
 import re
-from fielder_stats_calc import *
+from stats_calc.fielder_stats_calc import *
 from data_keys import negro_leagues, leagues_mayors
 
 numerical_stat_patron = re.compile('^-?(0|[1-9]\d*)?(\.\d+)?(?<=\d)$')

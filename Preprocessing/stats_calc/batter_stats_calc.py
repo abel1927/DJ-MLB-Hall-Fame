@@ -1,3 +1,8 @@
+
+def batter_seasson_avg_Calc(stat, games, seasson_factor=164,r=0):
+    player_factor = games/seasson_factor
+    return round((stat/player_factor),r)
+
 def plate_appereance(at_bat, base_on_balls,hit_by_pitch,sacrife_flies,sacrifice_bunts):
     plate_appereance=at_bat+base_on_balls+hit_by_pitch+sacrife_flies+sacrifice_bunts
     return plate_appereance

@@ -1,3 +1,8 @@
+
+def pitcher_seasson_avg_Calc(stat, games_plus_games_started, seasson_factor=68,r=0):
+    player_factor = games_plus_games_started/seasson_factor
+    return round((stat/player_factor),r)
+
 def win_lose_percentage(wins,loses):
     return round(wins/(wins+loses),3) if (wins+loses) != 0 else 0
 
