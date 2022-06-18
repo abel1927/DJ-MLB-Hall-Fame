@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import StratifiedKFold
 
-def clasifier_ft_importance_experiments(clsf_instance, data_features, target, t_size, n_splits=20):
+def clasifier_ft_importance_experiments(clsf_instance, data_features, target, n_splits=50):
     sk = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=737)
     features_imp = Series([0]*len(data_features.columns), index=data_features.columns)
     fold = 0

@@ -3,7 +3,7 @@ from sklearn.metrics import cohen_kappa_score
 from sklearn.model_selection import StratifiedKFold
 import numpy as np
 
-def train_with_cv(clf, X, y, cv=StratifiedKFold, n_splits=10, verbose=False):
+def train_with_cv(clf, X, y, cv=StratifiedKFold, n_splits=50, verbose=False):
     sk = cv(n_splits=n_splits, shuffle=True, random_state=529)
     fold = 0
     aucs,accs,cks = [],[],[]

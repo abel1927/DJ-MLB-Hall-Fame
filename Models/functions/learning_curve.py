@@ -23,7 +23,7 @@ def plot_learning_curve(estimator, features, target, metric, train_sizes, cv):
     plt.legend()
 
 
-def learning_curves_describe(estimator, features, target, train_sizes=[.1, .2, .3, .4, .5, .6, .7, .8, .9], cv=20):
+def learning_curves_describe(estimator, features, target, train_sizes=[.1, .2, .3, .4, .5, .6, .7, .8, .9], cv=50):
     plt.figure(figsize = (16,5))
     ms = [('neg_mean_squared_error',1),('accuracy',2),('roc_auc',3)]
     for m,i in ms:
