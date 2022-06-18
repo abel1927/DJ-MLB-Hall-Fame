@@ -2,7 +2,7 @@ from os import walk
 import json
 import re
 from stats_calc.fielder_stats_calc import *
-from data_keys import negro_leagues, leagues_mayors
+from data_keys import negro_leagues, leagues_mayors, get_decade
 
 numerical_stat_patron = re.compile('^-?(0|[1-9]\d*)?(\.\d+)?(?<=\d)$')
 
@@ -51,6 +51,8 @@ with open('./Data/mlb_players.json', 'w') as file:
                     summary_position = ""
                     games_as_pitcher = 0
                     games_as_batter = 0
+                    war_as_pitcher = 0
+                    war_as_batter = 0
 
                     if len(player_dict["batter_stats"])>0: 
                         b_stats = {"Age":{},"Lg":{},"G":{},"PA":{},"AB":{},"R":{},"H":{},"2B":{},"3B":{},"HR":{},
@@ -289,7 +291,12 @@ with open('./Data/mlb_players.json', 'w') as file:
                     else:
                         games_as_pitcher = p_stats["G"]["summary"]
                         games_as_batter = b_stats["G"]["summary"]
-                        if games_as_batter > games_as_pitcher:
+                        war_as_pitcher = p_stats["WAR"]["summary"]
+                        war_as_batter = b_stats["WAR"]["summary"]
+
+                        criteria = war_as_batter > war_as_pitcher if isinstance(war_as_pitcher, float) and isinstance(war_as_batter, float) else games_as_batter>games_as_pitcher
+
+                        if criteria:
                             player_dict['Player type'] = 2
                             if summary_position != "P":
                                 first_postition = summary_position
@@ -314,6 +321,10 @@ with open('./Data/mlb_players.json', 'w') as file:
                     player_dict["Positions"] = ab_positions
                     player_dict['first_position'] = first_postition
                     player_dict['second_position'] = second_position
+
+                    player_dict['debut_decade'] = get_decade(player_dict['First year'])
+                    player_dict['retirament_decade'] = get_decade(player_dict['Last year'])
+
                     mlb_player[player_id] = player_dict
 
     json.dump(mlb_player, file, indent=4)

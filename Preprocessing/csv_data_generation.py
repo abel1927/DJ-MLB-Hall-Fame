@@ -21,8 +21,8 @@ for id in players_dict.keys():
     if player_type == 1:
         p_stats = player["pitcher_stats"]
         for k in p_stats.keys():
-          if k+"_bt" in headers_pit:
-               row[k+'_bt'] = p_stats[k]["summary"]
+          if k+"_pt" in headers_pit:
+               row[k+'_pt'] = p_stats[k]["summary"]
     if player_type == 2:
         b_stats = player['batter_stats']
         f_stats = player['field_stats']
