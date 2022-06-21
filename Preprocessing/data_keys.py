@@ -105,7 +105,7 @@ bat_calc_stats = ['BA_bt', 'OBP_bt','OPS_bt','SLG_bt','TB_bt']
 bat_adv_stats = ['OPS+_bt', 'RAA_bt','RAR_bt','Rbaser_bt','Rbat_bt','Rdp_bt','Rfield_bt','Rpos_bt','Rrep_bt', 'WAA_bt','WAR_bt','dWAR_bt','oRAR_bt','oWAR_bt']
 
 field_basic_stats = ['A_fd','CG_fd','CS_fd','DP_fd','E_fd','GS_fd','G_fd','Inn_fd','PB_fd','PO_fd','SB_fd','WP_fd']
-field_calc_stats = ['CS%_fd','Ch_fd','Fld%_fd','RF/9_fd','RF/G_fd']
+field_calc_stats = ['Ch_fd','Fld%_fd']
 
 pit_basic_stats = ['W_pt','L_pt','G_pt','GS_pt','GF_pt','CG_pt','SHO_pt','SV_pt','IP_pt','H_pt','R_pt','ER_pt','HR_pt','BB_pt','IBB_pt','SO_pt','HBP_pt','BK_pt','WP_pt','BF_pt']
 pit_calc_stats = ['W-L%_pt','ERA_pt','FIP_pt','WHIP_pt','H9_pt','HR9_pt','BB9_pt','SO9_pt','SO/W_pt']

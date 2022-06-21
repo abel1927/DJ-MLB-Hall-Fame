@@ -57,8 +57,8 @@ with open('./Data/mlb_players.json', 'w') as file:
                     if len(player_dict["batter_stats"])>0: 
                         b_stats = {"Age":{},"Lg":{},"G":{},"PA":{},"AB":{},"R":{},"H":{},"2B":{},"3B":{},"HR":{},
                                     "RBI":{},"SB":{},"CS":{},"BB":{}, "SO":{}, "BA":{},"OBP":{},"SLG":{},"OPS":{},"OPS+":{},"TB":{},
-                                    "SH":{},"SF":{},"IBB":{},"Rbat":{},"Rbaser":{},"Rdp":{},"Rfield":{},"Rpos":{},"RAA":{},"WAA":{},
-                                    "Rrep":{},"RAR":{},"WAR":{},"oWAR":{},"dWAR":{},"oRAR":{}}
+                                    "HBP":{},"SH":{},"SF":{},"IBB":{},"Rbat":{},"Rbaser":{},"Rdp":{},"Rfield":{},"Rpos":{},"RAA":{},
+                                    "WAA":{},"Rrep":{},"RAR":{},"WAR":{},"oWAR":{},"dWAR":{},"oRAR":{}}
                         selected_stats = b_stats.keys()                     
                         years_bat_standard = player_dict["batter_stats"]["standard_stats"]['by_years']
                         summary_bat_standard = player_dict["batter_stats"]["standard_stats"]['summary']
