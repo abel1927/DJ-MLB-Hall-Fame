@@ -9,8 +9,8 @@ def win_lose_percentage(wins,loses):
 def era(er,ip):
     return round(er/ip,3) if ip != 0 else 0
 
-def filder_independent_pitching_rating(hr,bb,hbp,so,ip,constant_lg):
-    return round((13*+3*(bb+hbp+so)-2*so)/ip+constant_lg,2) if ip != 0 else 0
+def fip(hr,bb,hbp,so,ip):
+    return round((13*hr+3*(bb+hbp)-2*so)/ip,2) if ip != 0 else 0
 
 def whip(bb,h,ip):
     return round((bb+h)/ip,3) if ip != 0 else 0
@@ -32,14 +32,6 @@ def soW(so,w):
 
 def runs_better_than_average(ip,ra9_average,ra9):
     return round(ip*(ra9_average-ra9)/9,3) if ip != 0 else 0
-
-#????????????
-#def wins_above_average(waaWL_percent,games):
-#    pass
-
-#????????????
-#def war(args):
-#    pass
 
 def era_plus(era,era_league_average):
     return round(100*era_league_average/era,3) if era != 0 else 0
