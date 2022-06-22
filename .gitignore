@@ -132,3 +132,4 @@ dmypy.json
 Data/mlb_players.json
 Data/Corpus_csv/
 Data/players/
+Models/trained_models
