@@ -103,6 +103,19 @@ def performance_comparer(X, y):
 
     plot_scenario(label,auc_s, acc_s, color)
 
+def performance_comparer_plus(X,y,models,labels):
+    acc, auc = [], []
+    color = ['blue', 'violet', 'pink', 'green', 'black', 'cyan', 'orange', 'red','yellow', 'lime', 'peru', 'magenta', 'dimgray']
+    i = 0
+    for model in models:
+        print(f"Model : {labels[i]}")
+        i+=1
+        m_metric = learning_curves_describe(model, X, y)
+        print_metric(m_metric)
+        acc.append(m_metric[0])
+        auc.append(m_metric[1])
+    plot_scenario(labels, auc, acc, color[:len(labels)])
+
 def selected_performance_comparer(X, y):
 
     print('DecisionTree Gini depth=4')
