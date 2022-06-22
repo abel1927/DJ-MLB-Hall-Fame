@@ -1,7 +1,7 @@
 from typing import Dict, List
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-
+from data_keys import steroid_reports_players
 
 def select_features(df:pd.DataFrame, features:List)->pd.DataFrame:
     return df[features]
@@ -31,3 +31,10 @@ def encode_features(df: pd.DataFrame, features: List[str]):
         df[feat] = df[feat].astype('category')
         le = LabelEncoder()
         df[feat] = le.fit_transform(df[feat])
+
+def separete_steroids_players(df:pd.DataFrame):
+    steroid_p_url = steroid_reports_players.values()
+    steroid_idx = df[df["Url"] in steroid_p_url].index
+    with_out_steroid_p_df = df.drop(steroid_idx)
+    steroid_p_df =  df.iloc[steroid_idx]
+    return with_out_steroid_p_df, steroid_p_df
