@@ -21,11 +21,19 @@ def plot_learning_curve(estimator, features, target, metric, train_sizes, cv):
     title =  y_label + ' Learning curves'
     plt.title(title, fontsize = 18, y = 1.03)
     plt.legend()
+    return validation_scores_mean
 
 
-def learning_curves_describe(estimator, features, target, train_sizes=[.1, .2, .3, .4, .5, .6, .7, .8, .9], cv=20):
+def learning_curves_describe(estimator, features, target, train_sizes=[.1, .2, .3, .4, .5, .6, .7, .8, .9], cv=50):
     plt.figure(figsize = (16,5))
     ms = [('neg_mean_squared_error',1),('accuracy',2),('roc_auc',3)]
+    acc, auc = 0,0
     for m,i in ms:
         plt.subplot(1,3,i)
-        plot_learning_curve(estimator, features, np.ravel(target), m, train_sizes=train_sizes, cv=cv)
+        score = plot_learning_curve(estimator, features, np.ravel(target), m, train_sizes=train_sizes, cv=cv)
+        if i==2:
+            acc = round(np.mean(score[5:8]),3)
+        elif i==3:
+            auc = round(np.mean(score[5:8]),3)
+    plt.show()
+    return acc,auc
