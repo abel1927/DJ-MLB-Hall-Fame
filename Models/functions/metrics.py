@@ -13,7 +13,7 @@ def train_with_cv(clf, X, y, cv=StratifiedKFold, n_splits=50, verbose=False):
         X_val = X.loc[val_idx]
         y_val = y.loc[val_idx]
         # Fit Model on Train
-        clf.fit(X_tr, y_tr)
+        clf.fit(X_tr, np.ravel(y_tr))
         pred_proba = clf.predict_proba(X_val)[:,1]
         pred = clf.predict(X_val)
         auc_score = roc_auc_score(y_val, pred_proba)
@@ -44,9 +44,7 @@ def train_with_cv(clf, X, y, cv=StratifiedKFold, n_splits=50, verbose=False):
     
 
 def show_baseline_score(y_val, baseline):
-    #baseline = np.zeros_like(y_val)
     acc_score = accuracy_score(y_pred=baseline, y_true=y_val)
     auc_score = roc_auc_score(y_score=baseline, y_true=y_val)
-    ck_score = cohen_kappa_score(baseline,y_val)
     print(f"Accuracy: {acc_score:0.4f}")
     print(f"AUC: {auc_score:0.4f}")
