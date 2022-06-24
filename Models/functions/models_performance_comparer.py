@@ -1,6 +1,6 @@
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
