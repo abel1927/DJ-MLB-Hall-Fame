@@ -38,12 +38,11 @@ def load_batter_model():
     return model_
 
 def load_pitcher_model():
-    pass
-    #path = 'Models/trained_models/batter_career_log_reg_std_model.pkl'
-    #model_ = None
-    #with open(path, 'rb') as file:
-    #    model_= load(file)
-    #return model_
+    path = 'Modelsb/models_trained/svm_lda_model.pkl'
+    model_ = None
+    with open(path, 'rb') as file:
+        model_= load(file)
+    return model_
 
 def load_batter_df():
     bat_df = pd.read_csv("Data/Corpus_csv/batters_all_career.csv")
@@ -91,7 +90,7 @@ def load_bat_features():
 
 def load_pit_features():
     f = ["total_seasons","WAR_pt", "WHIP_pt", "ERA_pt", "BB_pt","G_pt","W-L%_pt",
-    "'R_pt","SHO_pt","H_pt" ,"RAA_pt"]
+    "R_pt","SHO_pt","H_pt" ,"RAA_pt"]
     return f
 
 def load_keys(df):
