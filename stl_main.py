@@ -100,7 +100,25 @@ def load_keys(df):
     return keys
 
 def show_tops():
-    st.warning("Waiting..")
+    st.info("Result of models this was a top players")
+    st.write()
+    st.markdown(
+    "<h3>Pitchers Top</h1>",unsafe_allow_html=True,)
+    pit = [('Mariano Rivera', 0.85, 1),('Roy Halladay', 0.72, 1),('CC Sabathia', 0.611, 0),('Trevor Hoffman', 0.034, 1)]
+    for p in pit:
+        st.write(f"{p[0]}----> Probability:{p[1]}------>Current status: {p[2]}")
+
+    st.write()
+    st.write()
+    st.markdown(
+    "<h3>Batters Top</h1>",unsafe_allow_html=True,)
+    bat = [('Alex Rodriguez', 1.0, 0),('Adrian Beltre', 0.991, 0),('Chipper Jones', 0.989, 1),('Ken Griffey Jr.', 0.985, 1),('Derek Jeter', 0.949, 1),('Ivan Rodriguez', 0.882, 1),('Carlos Beltran', 0.877, 0),('Ichiro Suzuki', 0.861, 0),('Scott Rolen', 0.858, 0),('Chase Utley', 0.825, 0),('Manny Ramirez', 0.819, 0),('Vladimir Guerrero', 0.792, 1),('Todd Helton', 0.774, 0),('Andruw Jones', 0.585, 0),('Jim Thome', 0.582, 1),('David Ortiz', 0.061, 1)]
+    for p in bat:
+        st.write(f"{p[0]}----> Probability:{p[1]}------>Current status: {p[2]}")
+
+    st.write()
+    st.write()
+    st.info("David Ortiz and Trevor Hoffman have been dropped by the model, but...a little danger, sorry Big Papy..")
 
 def get_proba():
     search = st.text_input('Player name', value=st.session_state.last_search)
