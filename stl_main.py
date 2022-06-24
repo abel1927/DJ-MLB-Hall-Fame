@@ -188,7 +188,7 @@ if __name__ == '__main__':
     st.set_page_config(
         page_title="DJ MLB Hall Of Fame Page")
 
-    st.sidebar.header('DJ MLB Hall Of Fame, A data jorunalism and ML proyect')
+    st.sidebar.header('DJ MLB Hall Of Fame, A data journalism and ML proyect')
     nav = st.sidebar.radio('',['Probability Pred', 'Display Tops'])
     st.sidebar.markdown(""" \n \n""")
 
