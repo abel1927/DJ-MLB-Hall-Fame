@@ -6,8 +6,8 @@ from Preprocessing.data_keys import steroid_reports_players
 def select_features(df:pd.DataFrame, features:List)->pd.DataFrame:
     return df[features]
 
-def filter_dataset(df:pd.DataFrame==None, eq_conditions:Dict==None, 
-gt_conditions:Dict==None,lt_conditions:Dict==None, ineq_conditions:Dict==None)->pd.DataFrame:
+def filter_dataset(df:pd.DataFrame=None, eq_conditions:Dict=None, 
+gt_conditions:Dict=None,lt_conditions:Dict=None, ineq_conditions:Dict=None)->pd.DataFrame:
     if eq_conditions != None:
         for cond_key in eq_conditions.keys():
             cond_value = eq_conditions[cond_key]
