@@ -1,26 +1,211 @@
-George Louis Scales-- Pertenence grade: 0.833
 James William Gilliam-- Pertenence grade: 0.667
 Elston Gene Howard-- Pertenence grade: 0.667
-Allen Hurley McNair-- Pertenence grade: 0.667
 Alphonse Eugene Smith-- Pertenence grade: 0.667
 Newton Henry Allen-- Pertenence grade: 0.5
 Albert Dewey Creacy-- Pertenence grade: 0.5
 Branch Lee Russell-- Pertenence grade: 0.5
+George Louis Scales-- Pertenence grade: 0.5
 Henry Curtis Thompson-- Pertenence grade: 0.5
 Clinton Cyrus Thomas-- Pertenence grade: 0.5
-John Christopher Beckwith-- Pertenence grade: 0.5
-Richard Benjamin Lundy-- Pertenence grade: 0.5
-Walter Moore-- Pertenence grade: 0.333
-Edgar Wooded Wesley-- Pertenence grade: 0.333
-Jerry Charles Benjamin-- Pertenence grade: 0.167
-George Henry Carr-- Pertenence grade: 0.167
-Herbert Alphonso Dixon-- Pertenence grade: 0.167
-Crush Christopher Columbus Holloway-- Pertenence grade: 0.167
-Victor Elander Harris-- Pertenence grade: 0.167
-Oscar Johnson-- Pertenence grade: 0.167
-William Wade Johnston-- Pertenence grade: 0.167
-Henry Allen Kimbro-- Pertenence grade: 0.167
-Roy Alexander Parnell-- Pertenence grade: 0.167
+Allen Hurley McNair-- Pertenence grade: 0.333
+Ángel Alfonso-- Pertenence grade: 0.333
+Frank Samuel Austin-- Pertenence grade: 0.333
+Herman Andrews-- Pertenence grade: 0.333
+Alfred Allen Armour-- Pertenence grade: 0.333
+Eugene Walter Baker-- Pertenence grade: 0.333
+Eugene Henry Fowlkes Benson-- Pertenence grade: 0.333
+Lyman Wesley Bostock-- Pertenence grade: 0.333
+Jerry Charles Benjamin-- Pertenence grade: 0.333
+John Lawrence Bissant-- Pertenence grade: 0.333
+Richard Byas-- Pertenence grade: 0.333
+Thomas Julius Brown-- Pertenence grade: 0.333
+Knowlington Ottoway Burbage-- Pertenence grade: 0.333
+Samuel Bennett-- Pertenence grade: 0.333
+Ernest Larry Brown-- Pertenence grade: 0.333
+Ameal Brooks-- Pertenence grade: 0.333
+Junius Alexander Bibbs-- Pertenence grade: 0.333
+Willie Alphonso Bobo-- Pertenence grade: 0.333
+Charles H. Blackwell-- Pertenence grade: 0.333
+Bernardo Baró-- Pertenence grade: 0.333
+Thomas Lee Butts-- Pertenence grade: 0.333
+Robert Richard Boyd-- Pertenence grade: 0.333
+Samuel Howard Bankhead-- Pertenence grade: 0.333
+Irvin Woodberry Brooks-- Pertenence grade: 0.333
+John A. Britton-- Pertenence grade: 0.333
+Fred Bankhead-- Pertenence grade: 0.333
+James R. Brown-- Pertenence grade: 0.333
+George W. Britt-- Pertenence grade: 0.333
+Otto Richard Briggs-- Pertenence grade: 0.333
+George Henry Carr-- Pertenence grade: 0.333
+Matthew Carlisle-- Pertenence grade: 0.333
+William Walker Cash-- Pertenence grade: 0.333
+Pelayo Chacón-- Pertenence grade: 0.333
+Howard Cleveland-- Pertenence grade: 0.333
+James Buster Clarkson-- Pertenence grade: 0.333
+Walter I. Cannady-- Pertenence grade: 0.333
+Homer Curry-- Pertenence grade: 0.333
+William J. Cooper-- Pertenence grade: 0.333
+Marlin Theodore Carter-- Pertenence grade: 0.333
+John William Crutchfield-- Pertenence grade: 0.333
+George Daniel Crowe-- Pertenence grade: 0.333
+Elwood DeMoss-- Pertenence grade: 0.333
+Lorenzo Davis-- Pertenence grade: 0.333
+Wilson Connie Day-- Pertenence grade: 0.333
+Tommie Dukes-- Pertenence grade: 0.333
+John Howard Davis-- Pertenence grade: 0.333
+Valentín Dreke-- Pertenence grade: 0.333
+Edward Joseph Dwight-- Pertenence grade: 0.333
+John Wesley Donaldson-- Pertenence grade: 0.333
+George Dixon-- Pertenence grade: 0.333
+Maurice Julius Dallard-- Pertenence grade: 0.333
+Herbert Alphonso Dixon-- Pertenence grade: 0.333
+Walter Davis-- Pertenence grade: 0.333
+Frank Lee Duncan-- Pertenence grade: 0.333
+Lloyd Benjamon Davenport-- Pertenence grade: 0.333
+Joseph P. Dunn-- Pertenence grade: 0.333
+Howard Willis Easterling-- Pertenence grade: 0.333
+Luscious Luke Easter-- Pertenence grade: 0.333
+Macajah Marchand Eggleston-- Pertenence grade: 0.333
+James Ford-- Pertenence grade: 0.333
+George Franklin Giles-- Pertenence grade: 0.333
+Richard Raymond Gee-- Pertenence grade: 0.333
+William Gray-- Pertenence grade: 0.333
+Floyd Gardner-- Pertenence grade: 0.333
+James Elbert Greene-- Pertenence grade: 0.333
+Earl C. Gurley-- Pertenence grade: 0.333
+Curtis Harris-- Pertenence grade: 0.333
+Samuel Thomas Hughes-- Pertenence grade: 0.333
+Samuel Harding Hairston-- Pertenence grade: 0.333
+Cowan Fontella Hyde-- Pertenence grade: 0.333
+Crush Christopher Columbus Holloway-- Pertenence grade: 0.333
+Joe William Hewitt-- Pertenence grade: 0.333
+David William Harvey-- Pertenence grade: 0.333
+Victor Elander Harris-- Pertenence grade: 0.333
+Robert Alexander Harvey-- Pertenence grade: 0.333
+Ramón Herrera-- Pertenence grade: 0.333
+William Claire Halley Harding-- Pertenence grade: 0.333
+Jesse James Hubbard-- Pertenence grade: 0.333
+John Elbert Hines-- Pertenence grade: 0.333
+George Hamilton-- Pertenence grade: 0.333
+Robert Hudspeth-- Pertenence grade: 0.333
+John William Hayes-- Pertenence grade: 0.333
+Johnson Hill-- Pertenence grade: 0.333
+David Will Hoskins-- Pertenence grade: 0.333
+William Charles Hoskins-- Pertenence grade: 0.333
+Richard Alvin Jackson-- Pertenence grade: 0.333
+George Washington Johnson-- Pertenence grade: 0.333
+Claude Cecil Johnson-- Pertenence grade: 0.333
+William Wade Johnston-- Pertenence grade: 0.333
+Clarence Reginald Jenkins-- Pertenence grade: 0.333
+Bertram Johnson-- Pertenence grade: 0.333
+Bienvenido Jiménez-- Pertenence grade: 0.333
+Ruben Jones-- Pertenence grade: 0.333
+John L. Jones-- Pertenence grade: 0.333
+Samuel Jethroe-- Pertenence grade: 0.333
+William H. Johnson-- Pertenence grade: 0.333
+Walter Lee Joseph-- Pertenence grade: 0.333
+Henry Allen Kimbro-- Pertenence grade: 0.333
+Harry Claudius Kenyon-- Pertenence grade: 0.333
+Daniel Kennard-- Pertenence grade: 0.333
+William McKinley Lowe-- Pertenence grade: 0.333
+Clarence Lamar-- Pertenence grade: 0.333
+Richard Benjamin Lundy-- Pertenence grade: 0.333
+James Henry Lyons-- Pertenence grade: 0.333
+Lester Lockett-- Pertenence grade: 0.333
+Louis Oliver Louden-- Pertenence grade: 0.333
+Henry William Milton-- Pertenence grade: 0.333
+Carroll Ray Mothell-- Pertenence grade: 0.333
+George McAllister-- Pertenence grade: 0.333
+Eldridge Everett Mayweather-- Pertenence grade: 0.333
+Buford Meredith-- Pertenence grade: 0.333
+Charles Edward Mason-- Pertenence grade: 0.333
+Oliver Marcell-- Pertenence grade: 0.333
+David Julius Malarcher-- Pertenence grade: 0.333
+Francis Oliver Matthews-- Pertenence grade: 0.333
+William James Marshall-- Pertenence grade: 0.333
+Percy Miller-- Pertenence grade: 0.333
+Luis Angel Márquez-- Pertenence grade: 0.333
+Esteban Montalvo-- Pertenence grade: 0.333
+Robert Miller-- Pertenence grade: 0.333
+Pablo Mesa-- Pertenence grade: 0.333
+Leroy Monroe Morney-- Pertenence grade: 0.333
+Mitchell Murray-- Pertenence grade: 0.333
+Euthumn Napier-- Pertenence grade: 0.333
+Rafael Miguel Noble-- Pertenence grade: 0.333
+Alejandro Oms-- Pertenence grade: 0.333
+José Pérez-- Pertenence grade: 0.333
+Theodore Roosevelt Page-- Pertenence grade: 0.333
+Leonard Curtis Pearson-- Pertenence grade: 0.333
+Javier Francisco Pérez-- Pertenence grade: 0.333
+Andrew Lawrence Patterson-- Pertenence grade: 0.333
+William George Perkins-- Pertenence grade: 0.333
+Charles Ederson Parks-- Pertenence grade: 0.333
+Clarence Palm-- Pertenence grade: 0.333
+Bartolome Portuondo-- Pertenence grade: 0.333
+Roy Alexander Parnell-- Pertenence grade: 0.333
+Anderson Lee Pryor-- Pertenence grade: 0.333
+Tom Parker-- Pertenence grade: 0.333
+Alexander Radcliff-- Pertenence grade: 0.333
+William Nathaniel Rogers-- Pertenence grade: 0.333
+Cornelius Randall Robinson-- Pertenence grade: 0.333
+Otto C. Ray-- Pertenence grade: 0.333
+Arvell Riggins-- Pertenence grade: 0.333
+Domingo Julio Rojo-- Pertenence grade: 0.333
+John Henry Russell-- Pertenence grade: 0.333
+Harry Leon Simpson-- Pertenence grade: 0.333
+Theodore Reginald Strong-- Pertenence grade: 0.333
+John Smith-- Pertenence grade: 0.333
+Orville Willis Singer-- Pertenence grade: 0.333
+Ray Theodore Sheppard-- Pertenence grade: 0.333
+Felipe Sierra-- Pertenence grade: 0.333
+Felton Snow-- Pertenence grade: 0.333
+Thomas Sampson-- Pertenence grade: 0.333
+Ernest Edward Scott-- Pertenence grade: 0.333
+Paul Eugene Stephens-- Pertenence grade: 0.333
+John Samuel Stephens-- Pertenence grade: 0.333
+Henry Allen Spearman-- Pertenence grade: 0.333
+Herbert Souell-- Pertenence grade: 0.333
+Charles Kenston Spearman-- Pertenence grade: 0.333
+Clarence Smith-- Pertenence grade: 0.333
+Cleveland Smith-- Pertenence grade: 0.333
+Clyde Spearman-- Pertenence grade: 0.333
+George Alexander Sweatt-- Pertenence grade: 0.333
+Edward Willis Steele-- Pertenence grade: 0.333
+Edward Daniel Stone-- Pertenence grade: 0.333
+James Thompson-- Pertenence grade: 0.333
+LeRoy R. Taylor-- Pertenence grade: 0.333
+Quincy Thomas Trouppe-- Pertenence grade: 0.333
+James Allen Taylor-- Pertenence grade: 0.333
+Olan Taylor-- Pertenence grade: 0.333
+Robert Burns Thurman-- Pertenence grade: 0.333
+David Thomas-- Pertenence grade: 0.333
+Elbert Carter Turner-- Pertenence grade: 0.333
+Juan Esteban Vargas-- Pertenence grade: 0.333
+Vinicius J. Williams-- Pertenence grade: 0.333
+Chaney Leonard White-- Pertenence grade: 0.333
+Charley Raymore Williams-- Pertenence grade: 0.333
+Ralph Arthur Wyatt-- Pertenence grade: 0.333
+John G. Washington-- Pertenence grade: 0.333
+Burnis Wright-- Pertenence grade: 0.333
+Chester Arthur Williams-- Pertenence grade: 0.333
+David Samuel Whatley-- Pertenence grade: 0.333
+James West-- Pertenence grade: 0.333
+James Williams-- Pertenence grade: 0.333
+Peter Smith Washington-- Pertenence grade: 0.333
+Thomas Ward-- Pertenence grade: 0.333
+Poindexter Williams-- Pertenence grade: 0.333
+Archie Virgil Ware-- Pertenence grade: 0.333
+Arthur Lee Wilson-- Pertenence grade: 0.333
+Jesse Horace Williams-- Pertenence grade: 0.333
+Daniel Richman Wilson-- Pertenence grade: 0.333
+Frank Warfield-- Pertenence grade: 0.333
+Harry Lovett Williams-- Pertenence grade: 0.333
+Henry Williams-- Pertenence grade: 0.333
+Parnell L. Woods-- Pertenence grade: 0.333
+Zollie Coffer Wright-- Pertenence grade: 0.333
+Edward Young-- Pertenence grade: 0.333
+Thomas Jefferson Young-- Pertenence grade: 0.333
+Walter Moore-- Pertenence grade: 0.167
+Edgar Wooded Wesley-- Pertenence grade: 0.167
+John Christopher Beckwith-- Pertenence grade: 0.167
 Wilson Robert Redus-- Pertenence grade: 0.167
-Harry Leon Simpson-- Pertenence grade: 0.167
-Chaney Leonard White-- Pertenence grade: 0.167
