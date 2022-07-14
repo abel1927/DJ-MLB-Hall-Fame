@@ -69,6 +69,7 @@ function yearHall(){
             }
             window.alert(result);  
     }
+    
 }
 
 function negroLeague(){
