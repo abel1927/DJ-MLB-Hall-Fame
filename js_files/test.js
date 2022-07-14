@@ -33,7 +33,43 @@ function showSteroidChance(){
 
 }
 
+function yearHall(){
+    console.log('Dentro de la funcion de traer negro league');
 
+    const xhttp =new XMLHttpRequest();
+
+    xhttp.open('GET','../Data/hof_players.json',true);
+
+    xhttp.send();
+    xhttp.onreadystatechange = function(){
+
+        let datos = JSON.parse(this.responseText); 
+
+            console.log('Carge los datos')
+            
+            let tempYear=document.querySelector('#-HALL-YEAR-INPUT-');
+            
+            console.log(tempYear.value)
+
+            year=tempYear.value;
+
+            let result=[]
+
+            
+            for (item in datos){
+                //console.log('Entre al for')
+                console.log(datos[item]["HoF year"])
+                if(datos[item]["HoF year"]==year){
+                    result.push(datos[item]["Name"]);
+                    
+                }
+                //console.log(datos[item]["Name"]);
+                //console.log(datos[item]["Hof year"]);
+                
+            }
+            window.alert(result);  
+    }
+}
 
 function negroLeague(){
     console.log('Dentro de la funcion de traer negro league');
@@ -52,6 +88,86 @@ function negroLeague(){
     }
 
 }
+
+function showActualChance(playerName){
+
+    console.log('Dentro de la funcion de traer actual chance');
+
+    const xhttp =new XMLHttpRequest();
+
+    xhttp.open('GET','../Data/mlb_players.json',true);
+
+    xhttp.send();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState==4 && this.status==200){
+            let actualChance= Math.random();
+            console.log(actualChance)
+            window.alert(actualChance*100 +"%" );
+
+
+            
+            }
+    }
+
+}
+
+function traerActual(){
+    console.log('Dentro de la funcion de traer actual 10 years');
+
+    const xhttp =new XMLHttpRequest();
+
+    xhttp.open('GET','../Data/mlb_players.json',true);
+
+    xhttp.send();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState==4 && this.status==200){
+
+            let datos = JSON.parse(this.responseText); 
+
+            console.log('Carge los datos')
+            
+            let playerName=document.querySelector('#-PLAYER-NAME-ACTUAL-');
+            
+            console.log(playerName.value)
+
+            playerName=playerName.value;
+            playerId='';
+
+            for(item in datos){
+                //console.log(datos[item]["Name"]);
+                if (datos[item]["Name"]==playerName)
+                {   
+                    playerId=item;
+                    console.log(parseInt(datos[item]["Last year"]));
+                    if(parseInt(datos[item]["Last year"])<2011)
+                    {
+                        window.alert("Ya pasaron los 10 años de eleccion de ese jugador.");
+                        return
+                    }
+                    console.log("succes");
+                    break;
+                    
+                    
+                }
+        
+                
+            }
+
+            if (playerId!=''){
+                showActualChance(playerName);
+            }
+            
+            else{
+                    window.alert("No existe ese jugador en nuestra base de datos.");
+                }
+            
+            
+
+            }
+    }
+
+}
+
 
 function traerSteroid(){
     console.log('Dentro de la funcion de traer steroid');
