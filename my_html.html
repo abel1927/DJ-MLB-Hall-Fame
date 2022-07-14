@@ -213,12 +213,6 @@ ref="js_files/miaterialize.min.css">
 </div>
 
 
-
-
-
-
-
-
 <h2>Hay heroes que cambian el mundo.</h2>
 <p>No todo fue siempre bueno, durante muchos años hubo una separación racial contra las profesionales
     negros, no permitiendoles jugar en las grandes ligas y segregandolos a una liga solo para ellos, las 
@@ -241,7 +235,13 @@ ref="js_files/miaterialize.min.css">
     algunos que podian haberlo logrado al tener los numeros mas cercanos, a los que si fueron
     galardonados:     </p>
 
+    <button type="button" id="-BUTTON-NEGRO-" onclick="negroLeague()">
+        <img src="./js_files/babe ruth.webp" height ="80" width="100" />
+    </button>
+
     <h3>Estadisticas de Los mejores jugadores de las Ligas Negras Americanas.</h3>   
+
+
 
 <h2>Por desgracia, algunos heroes se vuelven villanos</h2>   
 
@@ -254,10 +254,83 @@ ref="js_files/miaterialize.min.css">
     por la federacion. Con esto la federacion mando el mensaje de que las conductas 
     antideportivas iban a ser siempre rechazadas ya que se queria una competencia justa. 
 
+
 </p>
 
 <h3>Busque un jugador de la epoca de los asteroides sancionado y vea su chance de entrar al hall de no haber sido este vetado </h3> 
+<button type="button" id="-BUTTON-STEROID-SEARCH-" onclick="traerSteroid()">
+    <img src="./js_files/babe ruth.webp" height ="80" width="100" />
+</button>
+<input type="text" name="-PLAYER-NAME-STEROID-" id="-PLAYER-NAME-STEROID-" value="Jose Canseco" minlength="4" maxlength="30" />
 
+<div class="container">
+    <div class="section">
+
+        <table>
+        <thead id="-STEROID-SHOW-HEAD1-">
+            <tr>
+                <th>First Year</th>
+                <th>Last Year</th>
+                <th>Games</th>
+                <th>Home Runs</th>
+                <th>Batting Average</th>
+                <th>Race by input</th>
+                <th>Base on Balls</th>
+                <th>On base promedy</th>
+                <th>Slugger promedy</th>
+            </tr>
+        </thead>
+        <tbody id="-STEROID-SHOW-BODY1-">
+            <tr>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead id="-STEROID-SHOW-HEAD2-">
+            <tr>
+                <th>First Year</th>
+                <th>Last Year</th>
+                <th>Games</th>
+                <th>Wins</th>
+                <th>Lose</th>
+                <th>Earned Run Average</th>
+                <th>Innings Pitch</th>
+                <th>Hits Allowed</th>
+                <th>Strike Outs</th>
+            </tr>
+        </thead>
+        <tbody id="-STEROID-SHOW-BODY2-">
+            <tr>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+                <td>?</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <script src="js_files/test.js"></script>
+</div>
+
+<button type="button" id="-BUTTON-STEROID-SHOW-" onclick="showSteroidChance()">
+    <img src="./js_files/babe ruth.webp" height ="80" width="100" />
+</button>
 <h2>Que nuevos heroes en activo entraran al Hall.</h2>
 
 <p>
